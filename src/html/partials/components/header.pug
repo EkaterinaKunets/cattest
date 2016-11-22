@@ -1,11 +1,77 @@
 include ../abstracts/bemto/bemto.pug
 
 // Header
-+b.HEADER.header.container
-  +e.inner
-    // Logo
-    +b.logo
-      +e.A.img(href="index.html")
-        img(src="img/logo.png", alt="logo", title="logo")
++b.HEADER.header
+  //Stripe
+  +b.stripe
+    .container
+      .row
+        +e.P.text Enter an introduction here! (Appearance > Widgets > Top Toolbar - Left)
+        +e.inner
+          +e.A.link(href="#") FAQS
+          +e.A.search(href="#")
+            i.ion-android-search.mobile-search-icon
+  +b.header-contact
+    .container
+      .row
+        //Logo
+        +b.logo
+          +e.A.img
+            img(src="img/logo.png", alt="logo", title="logo")
+        //Contacts
+        +e.inner--adress
+          i.ion-ios-navigate-outline
+          +e.box
+            +e.H2.title Адрес
+            +e.text London, United Kingdom
+        +e.inner--mail
+          i.ion-ios-people-outline
+          +e.box
+            +e.H2.title Контакты
+            +e.A.link(href="mailto:info@yoursite.com") info@yoursite.com
+        +e.inner--presentation
+          i.ion-ios-redo-outline
+          +e.box
+            +e.H2.title Наша презентация
+            +e.A.link(href="#") View our prospectus
+  //Nav
+  +b.NAV.nav
+    .container
+      .row
+        +e.hamburger
+          +b.A.hamburger(href="#")
+            i.fa.fa-bars
+        +e.UL.list
+          +e.LI.item
+            +e.A.link--active(href="index.html") Главная
+          +e.LI.item
+            +e.A.link--sub(href="about-us.html") О компании
+            +e.subhamburger-1
+               +b.A.subhamburger-1(href="#")
+            +e.UL.sub-menu--1
+              li
+                a(href="faq.html") FAQ
+              li
+                a(href="reviews.html")  Отзывы
+              li
+                a(href="services.html")  Мы предлагаем
+          +e.LI.item
+            +e.A.link--sub(href="services.html") Услуги
+            +e.subhamburger-2
+               +b.A.subhamburger-2(href="#")
+            +e.UL.sub-menu--2
+              li
+                a(href="page.html")  Сертификация
+              li
+                a(href="page.html")  Разработка технической документации
+              li
+                a(href="page.html")  Роспотребнадзор
+          +e.LI.item
+            +e.A.link(href="news.html") Новости
+          +e.LI.item
+            +e.A.link(href="contact.html") Контакты
+
+
+
 
 

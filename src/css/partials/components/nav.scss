@@ -1,0 +1,240 @@
+.nav {
+  border-top: 1px solid #efefee;
+  border-bottom: 1px solid #efefee;
+  position: relative;
+  &__list {
+    list-style-type: none;
+    line-height: 27px;
+    font-size: 18px;
+  }
+  &__item {
+    display: inline-block;
+  }
+  &__item {
+    display: inline-block;
+    transition: 0.5s;
+    cursor: pointer;
+    padding: 20px;
+    position: relative;
+    @include mq($from:xs, $until:xl) {
+      display: block;
+      width: 100%;
+      color: #333;
+      line-height: 56px;
+      margin-right: 56px;
+      padding: 0 20px;
+      border-bottom: 1px solid #e6e6e6;
+    }
+    &:nth-of-type(1) {
+      padding-left: 0;
+    }
+  }
+
+  &__link {
+    color: #555555;
+    transition: 0.2s;
+    position: relative;
+    &:hover {
+     color: $dark-green;
+    }
+    &--sub {
+      &:after {
+       content: "\f0dd";
+       font-family: FontAwesome;
+       position: absolute;
+        font-size: 10px;
+        margin-left: 7px;
+        margin-top: -1px;
+      }
+    }
+    &--active {
+      color: $dark-green;
+    }
+    &:before {
+    border-bottom: 1px solid $dark-green;
+    bottom: -15%;
+    content: "";
+    height: 0;
+    left: 50%;
+    margin-left: -15px;
+    opacity: 0;
+    position: absolute;
+    -webkit-transition: 0.24s all cubic-bezier(0.48, -0.01, 0.27, 1.21);
+    transition: 0.24s all cubic-bezier(0.48, -0.01, 0.27, 1.21);
+    -webkit-transform: translateZ(0) scaleX(0);
+    transform: translateZ(0) scaleX(0);
+    will-change: opacity, transform;
+    width: 30px;
+    }
+  }
+
+
+  &__hamburger{
+    display: none;
+    text-align: center;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 50px;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+
+    @include mq($from:sm) {
+      top: 25px;
+    }
+    @include mq($from:xs, $until:xl){
+      display: block;
+    }
+  }
+
+  &__subhamburger-1,
+  &__subhamburger-2{
+    position: absolute;
+    display: none;
+    width: 56px;
+    height: 56px;
+    border-left: 1px solid #e6e6e6;
+    right: 0;
+    top: 0;
+    z-index: 99;
+    cursor: pointer;
+    @include mq($from:xs, $until:xl){
+      display: block;
+    }
+    &:after {
+      content: "";
+      width: 14px;
+      height: 2px;
+      background: #ccc;
+      position: absolute;
+      left: 50%;
+      margin-left: -7px;
+      top: 50%;
+      margin-top: -1px;
+    }
+    &:before {
+      content: "";
+      width: 2px;
+      height: 14px;
+      background: #ccc;
+      position: absolute;
+      left: 50%;
+      margin-left: -1px;
+      top: 50%;
+      margin-top: -7px;
+    }
+  }
+
+  &__list {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+    margin: 0;
+    @include mq($from:xs, $until:xl){
+      border-top: 1px solid #e6e6e6;
+      display: none;
+      position: absolute;
+      top: 75px;
+      width: 100%;
+      left: 0;
+      background-color: #fff;
+      z-index: 1000;
+    }
+    @include mq($from:sm, $until:md) {
+      top: 105px;
+    }
+    @include mq($from:md, $until:xl) {
+      top: 110px;
+    }
+  }
+
+  &__sub-menu {
+    position: absolute;
+    width: 250px;
+    padding: 0;
+    margin: 0;
+    visibility: hidden;
+    left: -5px;
+    top: 150%;
+    opacity: 0;
+    list-style-type: none;
+    transition: 0.5s;
+    line-height: 27px;
+    font-size: 18px;
+    background-color: #fff;
+    @include mq($from:xs, $until:xl){
+      display: none;
+      margin-left: 20px;
+      display: none;
+      padding: 0;
+      background-color: #fff;
+      visibility: visible;
+      position: static;
+      width: 100%;
+      color: #000;
+      opacity: 1;
+    }
+
+    li {
+      transition: 0.5s;
+      @include mq($from:xs, $until:xl){
+        display: block;
+        visibility: visible;
+        opacity: 1;
+        width: 100%;
+        color: #333;
+        margin-right: 56px;
+        padding: 0 20px;
+        background-color: #fff;
+        color: #000;
+      }
+    }
+
+    a{
+      display: block;
+      padding: 5px 20px;
+      text-transform: none;
+      color: #555555;
+      @include mq($from:xs, $until:xl){
+        padding: 0;
+      }
+      &:hover {
+        color: $green;
+      }
+    }
+  }
+}
+
+.nav__item:hover .nav__sub-menu {
+    opacity: 1;
+    visibility: visible;
+    display: block;
+    top: 68px;
+    cursor: pointer;
+      @include mq($from:xs, $until:xl){
+display: none;
+      }
+}
+
+.hamburger-active {
+  background-color: #000;
+}
+
+.subhamburger-active {
+  &:before {
+    display: none;
+  }
+}
+
+.nav__link:hover {
+  &:before {
+    transform: translateZ(0) scaleX(1);
+    opacity: 0.8;
+  }
+}

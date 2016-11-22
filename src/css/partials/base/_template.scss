@@ -16,9 +16,12 @@ html {
 body {
   margin: 0;
   background-color: $body-bg;
-  color: $text-color;
-  font-family: $font-family;
-  font-size: $font-size-text;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 27px;
+  font-weight: 300;
+  font-style: normal;
+  color: #333333;
+  font-size: 17px;
 }
 
 a {

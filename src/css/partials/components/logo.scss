@@ -1,0 +1,16 @@
+.logo {
+  flex: 0 0 30%;
+  padding-right: .625rem;
+  padding-left: .625rem;
+  &--footer {
+    padding: 0;
+  }
+  &__img {
+    max-height: 90px;
+    max-width: 100%;
+    img {
+    max-height: 90px;
+    max-width: 100%;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.stripe {
+  background-color: $green;
+  color: #fff;
+    .row {
+      justify-content: space-between;
+    }
+
+  &__text {
+    font-size: 15px;
+    margin: 9px 0;
+
+  }
+  &__link {
+    font-size: 13px;
+    color: #fff;
+    padding: 0;
+    margin-right: 12px;
+    display: inline-block;
+    padding: 9px 7px;
+    &:hover {
+      background-color: #0da15d;
+    }
+  }
+  &__search {
+    color: $white;
+    i {
+      font-size: 20px;
+    }
+  }
+}

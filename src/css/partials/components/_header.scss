@@ -1,0 +1,46 @@
+.header-contact {
+  padding: 7px 0 10px;
+  .row {
+    justify-content: space-between;
+    @include mq($from:xs, $until:xl){
+      flex-direction: column;
+    }
+  }
+  i {
+    color: $green;
+    font-size: 40px;
+  }
+  &__inner {
+    flex: 0 0 21.6%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+    padding-right: .625rem;
+    padding-left: .625rem;
+  }
+  &__title {
+    margin: 0px 0px 0px;
+    font-size: 16px;
+    font-weight: bolder;
+    line-height: 1.4em;
+    text-transform: none;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 4px;
+  }
+  &__text,
+  &__link {
+    font-size: 15px;
+    color: #444;
+  }
+  &__box {
+    margin-left: 15px;
+    width: 100%;
+    border-right: 1px solid #eee;
+  }
+}
+
