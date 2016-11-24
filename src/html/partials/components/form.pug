@@ -1,0 +1,13 @@
+include ../abstracts/mixins/_form.pug
+include ../abstracts/bemto/bemto.pug
+
++b.form-inner
+  .container
+    .row
+      +e.tabs
+        //- +e.UL.tabs-list
+        //-   +e.LI.tabs-link.active
+        //-     a Заказать сертификат
+        +e.tabs-content
+          +e.tab-item.active(id="tab01")
+            +form(application)

@@ -1,0 +1,31 @@
+- var application = [{name: 'application', id: 'formApplication', text : 'Заказать сертификат', application: true, button: 'Заказать', success: 'Ваша заявка отправлена'}]
+
+
+
+mixin form(items)
+  each item in items
+    +b.SECTION(class= 'form--' + item.name)
+      +e.H3.title #{item.title}
+      +e.P.text #{item.text}
+      +e.FORM.form(action='', method='', id= item.id)
+
+        if item.application
+          .form-group.required
+            +e.INPUT.input(type='text', name='Имя', placeholder='Ваше имя:')
+            p.help-block.help-block-error Ошибка заполнения поля формы
+          .form-group.required
+            +e.INPUT.input(type='text', name='Продукция', placeholder='Наименование продукции:*')
+            p.help-block.help-block-error Ошибка заполнения поля формы
+          .form-group.required
+            +e.INPUT.input(type='email', name='Email', placeholder='Ваш e-mail:*')
+            p.help-block.help-block-error Ошибка заполнения поля формы
+          .form-group
+            +e.INPUT.input(type='tel', name='Телефон', placeholder='Контактный телефон:')
+            p.help-block.help-block-error Ошибка заполнения поля формы
+
+        .form-group.required
+          +b.BUTTON.btn--form(type='submit') #{item.button}
+          p.help-block.help-block-success #{item.success}
+
+
+
