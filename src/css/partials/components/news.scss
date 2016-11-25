@@ -1,0 +1,65 @@
+.news {
+  padding: 35px 0 20px;
+  background-color: #4b4d6a;
+  color: #fff;
+  .row {
+    justify-content: space-between;
+    align-items: center;
+  }
+  .row-top {
+    align-items: flex-start;
+  }
+
+  &__btn-inner {
+    text-align: right;
+    @include mq($from:xs, $until:md){
+      text-align: left;
+      padding-bottom: 10px;
+    }
+  }
+  &__btn {
+    display: inline-block;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: #fff;
+    transition: .3s;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 3px 18px;
+    letter-spacing: 0.05em;
+    border-radius: 2px;
+    &:hover {
+    border: 1px solid rgba(255, 255, 255, 0.75);
+    }
+  }
+  &__title {
+    line-height: 31px;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+  }
+  &__inner {
+    margin-top: 20px;
+    border-right: 1px solid rgba(255, 255, 255, 0.15);
+    @include mq($from:xs, $until:md){
+      border: none;
+    }
+    &--last {
+      border: none;
+    }
+  }
+  &__subtitle {
+    font-size: 20px;
+    line-height: 1.4em;
+    color: #fff;
+  }
+  &__date {
+    color: #fff;
+    margin-top: 5px;
+    opacity: .5;
+    font-size: 15px;
+  }
+}
+  .row-border {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    padding-bottom: 3px;
+  }

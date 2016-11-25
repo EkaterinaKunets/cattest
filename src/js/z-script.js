@@ -10,6 +10,8 @@ jQuery(document).ready(function($){
     $('.nav__hamburger').toggleClass('hamburger-active');
   });
 
+  /*Бросить на .news__inner одинаковую высоту блока */
+
   // $('.nav__subhamburger-1').click(function(e){
   //   e.preventDefault();
   //   $('.nav__sub-menu--1').toggle();
