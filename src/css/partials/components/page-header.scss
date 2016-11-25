@@ -1,0 +1,51 @@
+.page-header {
+   background-image: url(../img/head-bgr.jpg);
+    background-size: cover;
+
+    &__title {
+      padding-top: 70px;
+      line-height: 65px;
+      letter-spacing: -1px;
+      font-weight: normal;
+      font-style: normal;
+      color: #fff;
+      font-size: 55px;
+      margin-bottom: 15px;
+      @include mq($from:xs, $until:md){
+        font-size: 40px;
+      }
+    }
+    &__text {
+      font-size: 22px;
+      color: #fff;
+      line-height: 1.55em;
+      max-width: 60%;
+      margin-top: 0;
+      padding-bottom: 60px;
+      @include mq($from:xs, $until:md){
+        max-width: 100%;
+      }
+    }
+    &__btn-inner {
+      width: 100%;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 10px 0;
+      text-align: right;
+    }
+    &__btn {
+      font-size: 15px;
+     line-height: 27px;
+    font-weight: 300;
+    font-style: normal;
+    color: #fff;
+    position: relative;
+    &:before {
+    content: "\f3ac";
+    font-family: 'Ionicons';
+    font-style: normal;
+    margin-right: 12px;
+    font-size: 12px;
+    position: relative;
+    }
+  }
+}
