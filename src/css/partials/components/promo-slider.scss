@@ -1,0 +1,104 @@
+.promo-slider {
+  color: #fff;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+  &__wrapper {
+    background-size: cover;
+    padding: 50px 0 100px;
+    &--first {
+     background-image: url(../img/1.jpg);
+    }
+    &--second {
+     background-image: url(../img/2.jpg);
+    }
+    &--third{
+     background-image: url(../img/3.jpg);
+    }
+  }
+  &__title {
+    letter-spacing: -1px;
+    font-weight: 600;
+    line-height: 69px;
+    font-size: 60px;
+    @include mq($from:xs, $until:md){
+      font-size: 40px;
+      line-height: 45px;
+      margin-bottom: 15px;
+    }
+  }
+  &__text {
+    line-height: 32px;
+    font-weight: 400;
+    font-size: 18px;
+  }
+  .slick-arrow {
+    position: absolute;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.35);
+    height: 40px;
+    width: 40px;
+    font-size: 0;
+    line-height: 40px;
+    text-align: center;
+    outline: none;
+    border: none;
+    transition: .3s;
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+  }
+  .slick-next {
+    bottom: 5%;
+    left: 50%;
+    &:after {
+    position: absolute;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    content: "\f3d3";
+    font-family: 'Ionicons';
+    line-height: 40px;
+    text-align: center;
+    display: block;
+    font-size: 18px;
+    bottom: 0;
+    left: 0;
+    }
+  }
+  .slick-prev {
+    bottom: 5%;
+    left: 50%;
+    margin-left: -40px;
+    &:after {
+    position: absolute;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    content: "\f3d2";
+    font-family: 'Ionicons';
+    line-height: 40px;
+    text-align: center;
+    display: block;
+    font-size: 18px;
+    bottom: 0;
+    left: 0;
+    }
+  }
+  &__btn {
+    letter-spacing: 1px;
+    font-weight: 400;
+    padding: 11.1486px 19.1119px;
+    border-radius: 2px;
+    background-color: rgb(249, 139, 0);
+    font-size: 11.1486px;
+    color: rgb(255, 255, 255);
+    white-space: nowrap;
+    width: auto;
+    height: auto;
+    font-size: 15px;
+    text-transform: uppercase;
+    line-height: 21.5009px;
+    border-width: 0px;
+  }
+}

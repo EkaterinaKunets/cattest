@@ -5,7 +5,7 @@
 @import "partials/abstracts/bootstrap-flex";
 @import "vendor/normalize";
 @import "vendor/mq";
-// @import "vendor/slick";
+@import "vendor/slick";
 
 // Abstracts
 
@@ -22,6 +22,7 @@
 @import "partials/components/stripe";
 @import "partials/components/logo";
 @import "partials/components/nav";
+@import "partials/components/promo-slider";
 @import "partials/components/proposal";
 @import "partials/components/form";
 @import "partials/components/form-states";
@@ -31,4 +32,5 @@
 @import "partials/components/gallery";
 @import "partials/components/page-header";
 @import "partials/components/about-us-features";
+@import "partials/components/place-to-work";
 
