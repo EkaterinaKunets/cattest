@@ -1,0 +1,30 @@
+.logo-slider {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 50px;
+  &--first {
+    padding-top: 50px;
+  }
+  &__border {
+    border-top: 1px solid rgba(0,0,0,.1);
+  }
+  &__img {
+    display: block;
+    max-height: 120px;
+    opacity: .8;
+    transition: .3s;
+    &:hover {
+      opacity: 1;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit:contain;
+    }
+  }
+}

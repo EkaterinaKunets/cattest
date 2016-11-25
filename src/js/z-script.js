@@ -38,6 +38,56 @@ jQuery(document).ready(function($){
     autoplaySpeed: 4000
   });
 
+  /* галерея Promo Slider */
+  $('.logo-slider--first').slick({
+    infinite: true,
+    arrows: false,
+    dots: false,
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    speed: 900,
+    autoplay: true,
+    autoplaySpeed: 6000,
+     responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1
+      }
+    }
+  ]
+  });
+
+    $('.logo-slider--second').slick({
+    infinite: true,
+    arrows: false,
+    dots: false,
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    speed: 900,
+    autoplay: true,
+    autoplaySpeed: 6000,
+     responsive: [
+    {
+      breakpoint: 960,
+      settings: {
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1
+      }
+    }
+  ]
+  });
   // /* кнопка "наверх" */
   // $('.side-fixed-menu__link--up').click(function(e) {
   //     e.preventDefault();
