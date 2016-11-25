@@ -1,0 +1,66 @@
+.about-us-features {
+  padding: 30px 0;
+  &__motto {
+    line-height: 35px;
+    font-weight: 300;
+    font-style: normal;
+    color: #222;
+    font-size: 22px;
+    color: $green;
+    margin-top: 12px;
+  }
+  &__text {
+    line-height: 27px;
+    font-weight: 300;
+    font-style: normal;
+    color: #343e47;
+    font-size: 17px;
+  }
+  .row--stripe {
+     border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+     padding-bottom: 30px;
+  }
+  &__title {
+    padding-top: 30px;
+        line-height: 42px;
+    letter-spacing: -0.4px;
+    font-weight: 300;
+    font-style: normal;
+    color: #222;
+    font-size: 32px;
+    position: relative;
+    &:after {
+      content: '';
+      position: absolute;
+      width: 40px;
+      height: 2px;
+      background-color: $green;
+      bottom: -10px;
+      left: 0;
+    }
+  }
+  &__list {
+    margin-top: 55px;
+    padding-left: 0;
+    list-style-type: none;
+    width: 100%;
+  }
+  tbody {
+    width: 100%;
+  }
+  &__item {
+    border-bottom: 1px solid #e2e2e2;
+    width: 100%;
+  }
+  &__number {
+    font-size: 28px;
+    text-align: left;
+    vertical-align: bottom;
+    font-weight: 300;
+    padding: 0.7em 1em 0.7em 0em;
+  }
+  &__about {
+    font-size: 18px;
+    padding: 0.7em 1em 0.7em 0em;
+  }
+}
