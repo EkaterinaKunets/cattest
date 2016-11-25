@@ -1,0 +1,38 @@
+.features {
+  padding-top: 55px ;
+  padding-bottom: 20px;
+  background-color: #f8f8f8;
+  text-align: center;
+  &__inner {
+    padding: 40px 20px 20px;
+    background-color: #fff;
+    @include mq($from:xs, $until:xl){
+      margin-bottom: 20px;
+    }
+  }
+  &__text {
+    line-height: 27px;
+    font-weight: 300;
+    font-style: normal;
+    color: #343e47;
+    font-size: 17px;
+    margin-top: 10px;
+  }
+  i {
+    font-size: 62px;
+    color: #00c96d;
+    display: block;
+    margin-bottom: 17px;
+  }
+  &__title {
+    line-height: 35px;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 22px;
+    color: $dark-green;
+    transition: .3s;
+    &:hover {
+      color: #222;
+    }
+  }
+}
