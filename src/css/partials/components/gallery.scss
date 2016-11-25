@@ -1,0 +1,61 @@
+.gallery {
+  text-align: center;
+  padding: 40px 0;
+  &__title {
+    line-height: 42px;
+    letter-spacing: -0.4px;
+    font-weight: 300;
+    font-style: normal;
+    color: #222;
+    font-size: 32px;
+  }
+  &__text {
+    color: #999999;
+    line-height: 31px;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+  }
+  .row {
+    justify-content: center;
+  }
+  &__inner {
+    &--big {
+      width: 50%;
+      @include mq($from:xs, $until:xl){
+        width: 100%;
+      }
+    }
+    &--small {
+      width: 30%;
+    }
+  }
+  &__img {
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit:cover;
+    }
+    &--big {
+      max-width: 520px;
+      max-height: 379px;
+      @include mq($from:xs, $until:sm){
+      min-width: 278px;
+      min-height: 173px;
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-bottom: 20px;
+      }
+    }
+    &--small {
+      max-width: 278px;
+      max-height: 160px;
+      margin-bottom: 18px;
+      @include mq($from:xs, $until:xl){
+      display: none;
+      }
+    }
+  }
+}
+

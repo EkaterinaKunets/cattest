@@ -1,0 +1,20 @@
+include ../abstracts/bemto/bemto.pug
+
+//Gallery
++b.SECTION.gallery
+  .container
+    .row
+      .col-xs-12.col-md-8
+        +e.H2.title Редактируемый заголовок
+        +e.P.text Редактируемый текст под заголовком. No global movement springs from individuals. It takes an entire team united behind something big. Together, we work hard on creating the best investment platform.
+    .row
+      +e.inner--big
+        +e.img--big
+          img(src="img/7.jpg" alt="7")
+      +e.inner--small
+        +e.wrapper
+          +e.img--small
+            img(src="img/8.jpg" alt="8")
+        +e.wrapper
+          +e.img--small
+            img(src="img/9.jpg" alt="9")
