@@ -1,0 +1,91 @@
+.services-aside {
+  background-color: #fff;
+  border-top: 2px solid $green;
+  border-left: 1px solid rgba(0,0,0,.15);
+  border-right: 1px solid rgba(0,0,0,.15);
+  border-bottom: 1px solid rgba(0,0,0,.15);
+  height: 100%;
+  padding: 20px;
+  position: absolute;
+  top: -80px;
+  margin-left: 20px;
+  text-align: center;
+    @include mq($from:xs, $until:xl){
+      position: static;
+      margin: 0;
+    }
+  &__title {
+    line-height: 29px;
+    font-weight: 300;
+    font-style: normal;
+    color: #444;
+    font-size: 20px;
+    position: relative;
+    &:after {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    position: absolute;
+    background-color: #e0e0e0;
+    content: "";
+    height: 1px;
+    width: 20%;
+    bottom: -15px;
+    }
+    &--second {
+      margin-top: 30px;
+      margin-bottom: 40px;
+    }
+  }
+  &__link-wrapper {
+    margin: 30px 0;
+  }
+  &__link {
+    font-size: 16px;
+    display: block;
+    color: $green;
+    transition: .3s;
+    &:hover {
+      color: #222;
+    }
+  }
+  &__wrapper {
+    text-align: left;
+    background: #F7F7F7;
+    border: 1px solid #f7f7f7;
+    padding: 12px;
+    border-radius: 2px;
+    overflow: hidden;
+    display: block;
+    margin-bottom: 18px;
+  }
+  &__wrapper-title {
+    margin-top: 0;
+    line-height: 1;
+    margin-bottom: 3px;
+  }
+  &__wrapper-text {
+    color: #888;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.3;
+    margin-top: 3px;
+  }
+  &__news-title {
+    font-size: 16px;
+    color: $dark-green;
+    margin-top: 20px;
+    display: block;
+    line-height: 1.2;
+    margin-bottom: 5px;
+    transition: .3s;
+    &:hover {
+      color: #222;
+    }
+  }
+  &__date {
+    margin-top: 5px;
+    font-size: 13px;
+    opacity: 0.5;
+  }
+}
