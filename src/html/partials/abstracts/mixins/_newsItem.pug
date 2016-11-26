@@ -1,0 +1,9 @@
+mixin newsItem(img,date,title)
+  +e.DIV.box
+    +e.A.wrapper(href="page.html")
+        +e.DIV.img
+          img(src= "img/" + img alt="img")
+        +e.DIV.inner
+          +e.date-inner
+            +e.P.date #{date}
+          +e.A.title(href="page.html") #{title}
