@@ -101,6 +101,26 @@ jQuery(document).ready(function($){
       $(this).removeClass('subtitle-close');
     }
   });
+
+  $('.what-we-do__tabs-link a').on('click', function(e){
+  e.preventDefault();
+
+  $(this)
+    .closest('.what-we-do__tabs-list')
+    .find('.what-we-do__tabs-link.active')
+    .removeClass('active');
+  $(this)
+   .closest('.what-we-do__tabs-link')
+   .addClass('active');
+
+  $(this)
+   .closest('.what-we-do__tabs')
+   .find('.what-we-do__tab-item.active')
+   .removeClass('active');
+  link_href = $(this).attr('href');
+  $(link_href).addClass('active');
+  });
+
   // /* кнопка "наверх" */
   // $('.side-fixed-menu__link--up').click(function(e) {
   //     e.preventDefault();

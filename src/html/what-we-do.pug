@@ -1,0 +1,12 @@
+extends partials/templates/template.pug
+
+block content
+  +b.page-header
+      .container
+        .row
+          .col-xs-12
+            +e.H1.title Мы предлагаем
+            +e.P.text We invest your money in a globally diversified portfolio of low-cost index funds and give you personalized financial advice.
+            +e.btn-inner
+              +e.A.btn(href="#") Share
+  include partials/components/what-we-do.pug

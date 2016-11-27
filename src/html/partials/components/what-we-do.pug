@@ -1,0 +1,69 @@
+include ../abstracts/bemto/bemto.pug
+
+//FAQ
++b.SECTION.what-we-do
+  .container
+    .row
+      .col-xs-12.col-lg-8
+        +e.P.promo-text The portfolio is designed to achieve optimal returns at every level of risk. Through diversification, automated rebalancing, better behavior, and lower fees, our customers can expect 4.30% higher returns than a typical DIY investor.
+        +e.P.text Our Tax Loss Harvesting systematically finds embedded capital losses to lower investment taxes and increase after-tax returns.
+        +e.P.text The better we know you, the better advice we can give – which is why you can securely sync your outside investments. You can see your total net worth in one place, and we can advise you on how much you’re losing to fees and idle cash.
+          .row
+            .col-xs-12.col-md-9
+              +e.DIV.img
+                img(src="img/wedo.jpg" alt="wedo")
+            .col-xs-12.col-md-3
+              +e.DIV.inner
+                +e.P.small-text We believe in passive investing, which means taking on the right level of risk for your time horizon, and letting our advanced algorithms do all the work.
+        +e.box
+          +e.H2.title Advice across all of your wealth.
+          +e.P.text Each investment portfolio is designed to get customers optimal investor returns. Our goal-based investing framework and advice algorithm let customers know if they are on track to reach their investment goals like Retirement or a Safety Net Fund, in seconds.
+        +e.wrapper
+          +e.tabs
+            +e.UL.tabs-list
+              +e.LI.tabs-link.active
+                a(href="#safe01") Безопасность
+              +e.LI.tabs-link
+                a(href="#safe02") Защита
+              +e.LI.tabs-link
+                a(href="#safe03") Что-то еще
+            +e.tabs-content
+              +e.tab-item.active(id="safe01")
+                +e.P.text At Canava Transport, ensuring the safety of our customers, employees and our communities is our priority. We understand the importance of continuous training and are proud of our safety knowledge, experienced staff and ability to exceed industry standards year after year. We have established and continually maintain excellent motor carrier safety ratings and low accident frequencies.
+                +e.P.text As a company, we have a solid safety performance history and will continue to be a leader in the area of safety and compliance, due to the dedication and professionalism of our fleet of drivers and vehicle maintenance personnel.
+              +e.tab-item(id="safe02")
+                +e.P.text At Canava Transport, we offer industry-leading asset protection and security compliance programs.
+                +e.P.text Canava Transport understands that our customers may have important and unique needs related to homeland security regulatory compliance, high-risk products, or brand protection. We offer consultation and proactive partnership to ensure that our customers’ security needs are met.
+                +e.P.text By leveraging modern and proven technologies, we provide for the integrity of customer assets while in-transit or at one of our facilities.
+              +e.tab-item(id="safe03")
+                +e.P.text At Canava Transport, we offer industry-leading asset protection and security compliance programs.
+                +e.P.text Canava Transport understands that our customers may have important and unique needs related to homeland security regulatory compliance, high-risk products, or brand protection. We offer consultation and proactive partnership to ensure that our customers’ security needs are met.
+      .col-xs-12.col-lg-4
+        +b.ASIDE.services-aside
+          +e.H2.title Категории услуг
+          +e.link-wrapper
+            +e.A.link(href="#") Cертификация качества
+            +e.A.link(href="#") Категория услуг 2
+          +e.A.wrapper(href="#")
+            .row
+              .col-xs-4
+                +e.img
+                  img(src="img/news6.jpg" alt="news")
+              .col-xs-8
+                +e.H3.wrapper-title How can we help?
+                +e.P.wrapper-text We'd be delighted to assist with anything.
+          +e.A.wrapper(href="#")
+            .row
+              .col-xs-4
+                +e.img
+                  img(src="img/news5.jpg" alt="news")
+              .col-xs-8
+                +e.H3.wrapper-title Frequent Questions
+                +e.P.wrapper-text Your most common queries answered.
+          +e.H2.title--second Последние новости
+          +e.A.news-title(href="#") Привет, мир!
+          +e.P.date 27.06.2016
+          +e.A.news-title(href="#") The New Fintech Disruptors: How Can you Benefit?
+          +e.P.date 19.03.2016
+          +e.A.news-title(href="#") Robo-Advisors and Banks: The Next Robo-Frontier
+          +e.P.date 18.03.2016
