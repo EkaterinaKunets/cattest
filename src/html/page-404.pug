@@ -1,0 +1,10 @@
+extends partials/templates/template.pug
+
+block content
+  +b.page-404
+    .container
+      .row
+        .col-xs-12
+          +e.H1.title 404
+          +e.P.text Извините, страница, которую вы ищите, не найдена. Пожалуйста, проверьте, что вы ввесли верный адрес
+          +e.A.link(href="index.html") Вернуться на главную

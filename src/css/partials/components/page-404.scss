@@ -1,0 +1,28 @@
+.page-404 {
+  padding: 20px 0 120px;
+  &__title {
+    line-height: 65px;
+    letter-spacing: -1px;
+    font-weight: 600;
+    color: #111;
+    font-size: 55px;
+  }
+  &__text {
+    line-height: 27px;
+    font-weight: 300;
+    font-style: normal;
+    color: #333333;
+    font-size: 17px;
+  }
+  &__link {
+    line-height: 27px;
+    font-weight: 300;
+    font-style: normal;
+    color: $dark-green;
+    font-size: 17px;
+    transition: .3s;
+    &:hover {
+      color: #333;
+    }
+  }
+}
