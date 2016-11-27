@@ -1,0 +1,62 @@
+include ../abstracts/bemto/bemto.pug
+
+//Single Service
++b.SECTION.single-service
+  .container
+    .row
+      .col-xs-12.col-lg-8
+        +e.P.promo-text Whether it’s the research and evaluation done by our investment professionals, or the dedicated care of our world-class customer support specialists, the people behind our technology make all the difference.
+        .row
+          .col-xs-12.col-md-4
+            +e.item
+              +e.A.img(href="page.html")
+                img(src="img/news1.jpg" alt="img")
+              +e.A.title(href="page.html") Услуга 1
+              +e.P.text We’ll tell you how to allocate your money across stocks and bonds and how much to invest each month and year.
+          .col-xs-12.col-md-4
+            +e.item
+              +e.A.img(href="page.html")
+                img(src="img/news4.jpg" alt="img")
+              +e.A.title(href="page.html") Услуга 2
+              +e.P.text We always invest the trust in a risk-adjusted, globally diversified investment portfolio of low-cost ETFs to maximize returns.
+          .col-xs-12.col-md-4
+            +e.item
+              +e.A.img(href="page.html")
+                img(src="img/news2.jpg" alt="img")
+              +e.A.title(href="page.html") Услуга 3
+              +e.P.text Fintech calculates your pension gap, or the difference between how much money you’ll have and how much you’ll need.
+          .col-xs-12.col-md-4
+            +e.item
+              +e.A.img(href="page.html")
+                img(src="img/news3.jpg" alt="img")
+              +e.A.title(href="page.html") Услуга 4
+              +e.P.text Our investment approach for retirement is based on extensive research and backtested to provide a tailored experience.
+      .col-xs-12.col-lg-4
+        +b.ASIDE.services-aside
+          +e.H2.title Категории услуг
+          +e.link-wrapper
+            +e.A.link(href="#") Cертификация качества
+            +e.A.link(href="#") Категория услуг 2
+          +e.A.wrapper(href="#")
+            .row
+              .col-xs-4
+                +e.img
+                  img(src="img/news6.jpg" alt="news")
+              .col-xs-8
+                +e.H3.wrapper-title How can we help?
+                +e.P.wrapper-text We'd be delighted to assist with anything.
+          +e.A.wrapper(href="#")
+            .row
+              .col-xs-4
+                +e.img
+                  img(src="img/news5.jpg" alt="news")
+              .col-xs-8
+                +e.H3.wrapper-title Frequent Questions
+                +e.P.wrapper-text Your most common queries answered.
+          +e.H2.title--second Последние новости
+          +e.A.news-title(href="#") Привет, мир!
+          +e.P.date 27.06.2016
+          +e.A.news-title(href="#") The New Fintech Disruptors: How Can you Benefit?
+          +e.P.date 19.03.2016
+          +e.A.news-title(href="#") Robo-Advisors and Banks: The Next Robo-Frontier
+          +e.P.date 18.03.2016

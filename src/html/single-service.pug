@@ -1,0 +1,12 @@
+extends partials/templates/template.pug
+
+block content
+  +b.page-header
+      .container
+        .row
+          .col-xs-12
+            +e.H1.title Cертификация качества
+            +e.P.text
+            +e.btn-inner
+              +e.A.btn(href="#") Share
+  include partials/components/single-service.pug
