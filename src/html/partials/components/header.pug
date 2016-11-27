@@ -8,7 +8,7 @@ include ../abstracts/bemto/bemto.pug
       .row
         +e.P.text Enter an introduction here! (Appearance > Widgets > Top Toolbar - Left)
         +e.inner
-          +e.A.link(href="#") FAQS
+          +e.A.link(href="faq.html") FAQS
           +e.A.search(href="#")
             i.ion-android-search.mobile-search-icon
   +b.header-contact
@@ -16,7 +16,7 @@ include ../abstracts/bemto/bemto.pug
       .row
         //Logo
         +b.logo
-          +e.A.img
+          +e.A.img(href="index.html")
             img(src="img/Logo.png", alt="logo", title="logo")
         //Contacts
         +e.inner--adress
@@ -33,7 +33,7 @@ include ../abstracts/bemto/bemto.pug
           i.ion-ios-redo-outline
           +e.box
             +e.H2.title Наша презентация
-            +e.A.link(href="#") View our prospectus
+            +e.A.link(href="page.html") View our prospectus
   //Nav
   +b.NAV.nav
     .container

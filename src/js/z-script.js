@@ -12,6 +12,15 @@ jQuery(document).ready(function($){
 
   /*Бросить на .news__inner одинаковую высоту блока */
 
+    var promoTextMaxHeight = 0;
+  var promoTextItem = $(".news__inner");
+  $(promoTextItem).each(function(){
+   if ( $(this).height() > promoTextMaxHeight) {
+    promoTextMaxHeight = $(this).height();
+   }
+  });
+  $(promoTextItem).height(promoTextMaxHeight);
+
   $('.nav__subhamburger-1').click(function(e){
     e.preventDefault();
     $('.nav__sub-menu--1').toggle();
@@ -135,25 +144,6 @@ jQuery(document).ready(function($){
         }, 600);
         return false;
     });
-
-  // /* кнопка "наверх" */
-  // $('.side-fixed-menu__link--up').click(function(e) {
-  //     e.preventDefault();
-  //     $('html, body').animate({scrollTop: 0},1000);
-  //     return false;
-  // });
-
-  // /* галерея Reviews */
-  // $('.reviews__gallery').slick({
-  //   infinite: true,
-  //   arrows: true,
-  //   dots: false,
-  //   slidesToShow: 1,
-  //   slidesToScroll: 1,
-  //   centerPadding: '0',
-  //   variableWidth: true
-  // });
-
 
 });
 
