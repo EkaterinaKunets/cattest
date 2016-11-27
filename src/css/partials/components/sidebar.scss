@@ -1,0 +1,70 @@
+.sidebar{
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 100%;
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,.15);
+  @include mq($from:xs, $until:lg){
+    display: none;
+  }
+}
+
+.social-links{
+    padding-left: 18px;
+    padding-top: 12px;
+    margin: 0px;
+    padding-bottom: 18px;
+    list-style-type: none;
+  &__item{
+    padding: 7px 5px;
+    &--last {
+      padding: 25px 15px;
+    }
+  }
+  i {
+    line-height:14px;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+  }
+  &__link{
+    display: block;
+    margin: 0 auto;
+    line-height:14px;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+    &--price{
+      transform: rotate(-90deg);
+      width: 100%;
+      white-space: nowrap;
+      display: inline-block;
+      direction: rtl;
+    }
+    &:hover, &:focus {
+      text-decoration: none;
+    }
+  }
+}
+.totop{
+  display: none;
+  position: fixed;
+  display: inline-block;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  &:before {
+    text-indent: 0;
+    font-family: 'Ionicons';
+    content: "\f366";
+    color: #666;
+    font-size: 26px;
+    position: absolute;
+    right: -8px;
+    top: 5px;
+  }
+}

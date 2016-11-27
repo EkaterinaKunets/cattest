@@ -121,6 +121,21 @@ jQuery(document).ready(function($){
   $(link_href).addClass('active');
   });
 
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 102) {
+            $('.totop').fadeIn();
+        } else {
+            $('.totop').fadeOut();
+        }
+    });
+
+    $('.totop').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+
   // /* кнопка "наверх" */
   // $('.side-fixed-menu__link--up').click(function(e) {
   //     e.preventDefault();

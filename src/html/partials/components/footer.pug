@@ -37,5 +37,27 @@ include ../abstracts/bemto/bemto.pug
           +e.INPUT.input(type="email" name="email" placeholder="Your email adress")
           +e.BUTTON.btn Sign Up
         +e.P.text Sign up today for hints, tips and the latest product news - plus exclusive special offers.
++b.ASIDE.sidebar
+  // Social links
+  +b.UL.social-links
+    +e.item
+      +e.A.link(href="http://facebook.com" target="_blank")
+        i.fa.fa-facebook
+    +e.item
+      +e.A.link(href="http://twitter.com" target="_blank")
+        i.fa.fa-twitter
+    +e.item
+      +e.A.link(href="http://instagram.com" target="_blank")
+        i.fa.fa-instagram
+    +e.item
+      +e.A.link(href="http://linkedin.com" target="_blank")
+        i.fa.fa-linkedin
+    +e.item
+      +e.A.link(href="http://vk.com" target="_blank")
+        i.fa.fa-vk
+    +e.item--last
+      +e.A.link--price(href="contact.html") Контакты
+  +b.A.totop(href="#")
+
 
 
