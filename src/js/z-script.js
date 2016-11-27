@@ -88,6 +88,19 @@ jQuery(document).ready(function($){
     }
   ]
   });
+
+      $('.faq__subtitle').click(function(e){
+    e.preventDefault();
+    if($(this).next('.faq__subtext').is(":visible")) {
+      $(this).next('.faq__subtext').slideUp();
+      $(this).addClass('subtitle-close');
+    } else {
+      $(this).closest('.faq__accordion').find('.faq__subtext').slideUp();
+      $(this).closest('.faq__accordion').find('.faq__subtitle').addClass('subtitle-close');
+      $(this).next('.faq__subtext').slideDown();
+      $(this).removeClass('subtitle-close');
+    }
+  });
   // /* кнопка "наверх" */
   // $('.side-fixed-menu__link--up').click(function(e) {
   //     e.preventDefault();
