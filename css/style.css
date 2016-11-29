@@ -959,10 +959,19 @@ h4 {
 
 .stripe {
   background-color: #00c96d;
-  color: #fff; }
+  color: #fff;
+  position: relative; }
   .stripe .row {
     -ms-flex-pack: justify;
         justify-content: space-between; }
+  .stripe__form {
+    display: none;
+    position: absolute;
+    right: 50px; }
+  .stripe__input {
+    height: 40px;
+    width: 200px;
+    padding-left: 7px; }
   .stripe__text {
     font-size: 15px;
     margin: 9px 0; }
@@ -997,7 +1006,9 @@ h4 {
 .nav {
   border-top: 1px solid #efefee;
   border-bottom: 1px solid #efefee;
-  position: relative; }
+  position: relative;
+  background-color: #fff;
+  width: 100%; }
   .nav__list {
     list-style-type: none;
     line-height: 27px;
@@ -1129,6 +1140,19 @@ h4 {
 .nav__link:hover:before {
   transform: translateZ(0) scaleX(1);
   opacity: 0.8; }
+
+.nav .logo {
+  display: none; }
+
+.nav-fixed {
+  position: fixed;
+  top: 0;
+  z-index: 900; }
+  .nav-fixed .logo {
+    display: block;
+    max-height: 70px; }
+    .nav-fixed .logo img {
+      max-height: 70px; }
 
 .promo-slider {
   color: #fff;
@@ -2275,6 +2299,15 @@ h4 {
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.15);
   z-index: 1000; }
+  .sidebar__list {
+    -ms-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+    white-space: nowrap;
+    direction: rtl;
+    list-style-type: none;
+    padding: 10px; }
+  .sidebar__item {
+    display: inline-block; }
 
 .social-links {
   padding-left: 18px;
