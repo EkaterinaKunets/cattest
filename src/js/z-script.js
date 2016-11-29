@@ -10,7 +10,19 @@ jQuery(document).ready(function($){
     $('.nav__hamburger').toggleClass('hamburger-active');
   });
 
-  /*Бросить на .news__inner одинаковую высоту блока */
+  $('.stripe__search').click(function(e){
+   e.preventDefault();
+   $('.stripe__form').toggle();
+  });
+
+    $(window).bind('scroll', function () {
+    if ($(window).scrollTop() > 100) {
+        $('.nav').addClass('nav-fixed');
+    } else {
+        $('.nav').removeClass('nav-fixed');
+    }
+});
+
 
     var promoTextMaxHeight = 0;
   var promoTextItem = $(".news__inner");

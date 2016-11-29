@@ -11,6 +11,16 @@
   @include mq($from:xs, $until:lg){
     display: none;
   }
+  &__list {
+    transform: rotate(-90deg);
+    white-space: nowrap;
+    direction: rtl;
+    list-style-type: none;
+    margin: 0;s
+  }
+  &__item {
+    display: inline-block;
+  }
 }
 
 .social-links{

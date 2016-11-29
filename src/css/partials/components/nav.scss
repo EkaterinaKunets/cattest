@@ -2,6 +2,8 @@
   border-top: 1px solid #efefee;
   border-bottom: 1px solid #efefee;
   position: relative;
+  background-color: #fff;
+  width: 100%;
     @include mq($from:xs, $until:xl){
       height: 80px;
     }
@@ -243,5 +245,24 @@ display: none;
   &:before {
     transform: translateZ(0) scaleX(1);
     opacity: 0.8;
+  }
+}
+
+.nav {
+  .logo {
+    display: none;
+  }
+}
+
+.nav-fixed {
+  position: fixed;
+  top: 0;
+  z-index: 900;
+  .logo {
+    display: block;
+    max-height: 70px;
+     img {
+      max-height: 70px;
+     }
   }
 }

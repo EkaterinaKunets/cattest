@@ -11,13 +11,15 @@ include ../abstracts/bemto/bemto.pug
           +e.A.link(href="faq.html") FAQS
           +e.A.search(href="#")
             i.ion-android-search.mobile-search-icon
+          +e.FORM.form
+            +e.INPUT.input(type="text" name="Поиск" placeholder="Поиск...")
   +b.header-contact
     .container
       .row
         //Logo
         +b.logo
           +e.A.img(href="index.html")
-            img(src="img/Logo.png", alt="logo", title="logo")
+            img(src="img/logo.png", alt="logo", title="logo")
         //Contacts
         +e.inner--adress
           i.ion-ios-navigate-outline
@@ -38,6 +40,9 @@ include ../abstracts/bemto/bemto.pug
   +b.NAV.nav
     .container
       .row
+        +b.logo
+          +e.A.img(href="index.html")
+            img(src="img/logo.png", alt="logo", title="logo")
         +e.hamburger
           +b.A.hamburger(href="#")
             i.fa.fa-bars
