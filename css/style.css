@@ -2305,7 +2305,7 @@ h4 {
     white-space: nowrap;
     direction: rtl;
     list-style-type: none;
-    padding: 10px; }
+    margin: 0; }
   .sidebar__item {
     display: inline-block; }
 
