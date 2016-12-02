@@ -1,7 +1,7 @@
 include ../abstracts/bemto/bemto.pug
 
 //About Links
-+b.SECTION.about-links
++b.SECTION.about-links(itemscope itemtype="http://schema.org/Service")
   .container
     .row
       .col-xs-12
@@ -9,13 +9,13 @@ include ../abstracts/bemto/bemto.pug
           +e.SPAN.title-wrapper Explore this Section
       .col-xs-12.col-md-4
         +e.inner
-          +e.A.link(href="page.html") Corporate Responsibility
+          +e.A.link(href="page.html" itemprop="offers") Corporate Responsibility
           +e.P.text We believe that improving our impact on society strengthens our firm and fulfills our fundamental business purpose.
       .col-xs-12.col-md-4
         +e.inner
-          +e.A.link(href="page.html") What We Do
+          +e.A.link(href="page.html" itemprop="offers") What We Do
           +e.P.text We always invest the trust in a risk-adjusted, globally diversified investment portfolio of low-cost ETFs to maximize returns.
       .col-xs-12.col-md-4
         +e.inner
-          +e.A.link(href="page.html") Frequent Questions
+          +e.A.link(href="page.html" itemprop="offers") Frequent Questions
           +e.P.text Your most common questions answered in our easy to follow FAQ guide for existing and potential customers.

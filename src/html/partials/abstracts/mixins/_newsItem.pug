@@ -1,9 +1,9 @@
 mixin newsItem(img,date,title)
-  +e.DIV.box
+  +e.DIV.box(itemscope itemtype="http://schema.org/NewsArticle")
     +e.A.wrapper(href="page.html")
         +e.DIV.img
-          img(src= "img/" + img alt="img")
+          img(src= "img/" + img alt="img" itemprop="image")
         +e.DIV.inner
           +e.date-inner
-            +e.P.date #{date}
-          +e.A.title(href="page.html") #{title}
+            +e.P.date(itemprop="dateline") #{date}
+          +e.A.title(href="page.html" itemprop="text") #{title}

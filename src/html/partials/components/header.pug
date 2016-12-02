@@ -21,16 +21,16 @@ include ../abstracts/bemto/bemto.pug
           +e.A.img(href="index.html")
             img(src="img/logo.png", alt="logo", title="logo")
         //Contacts
-        +e.inner--adress
+        +e.inner--adress(itemscope itemtype="http://schema.org/Organization")
           i.ion-ios-navigate-outline
           +e.box
             +e.H2.title Адрес
-            +e.text London, United Kingdom
-        +e.inner--mail
+            +e.text(itemprop="address") London, United Kingdom
+        +e.inner--mail(itemscope itemtype="http://schema.org/Organization")
           i.ion-ios-people-outline
           +e.box
             +e.H2.title Контакты
-            +e.A.link(href="mailto:info@yoursite.com") info@yoursite.com
+            +e.A.link(href="mailto:info@yoursite.com" temprop="email") info@yoursite.com
         +e.inner--presentation
           i.ion-ios-redo-outline
           +e.box
@@ -41,8 +41,8 @@ include ../abstracts/bemto/bemto.pug
     .container
       .row
         +b.logo
-          +e.A.img(href="index.html")
-            img(src="img/logo.png", alt="logo", title="logo")
+          +e.A.img(href="index.html" itemscope itemtype="http://schema.org/Brand")
+            img(src="img/logo.png", alt="logo", title="logo" itemprop="logo")
         +e.hamburger
           +b.A.hamburger(href="#")
             i.fa.fa-bars

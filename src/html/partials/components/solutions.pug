@@ -1,7 +1,7 @@
 include ../abstracts/bemto/bemto.pug
 
 //Solutions
-+b.SECTION.solutions
++b.SECTION.solutions(itemscope itemtype="http://schema.org/Service")
   .container
     .row
       .col-xs-12
@@ -10,19 +10,19 @@ include ../abstracts/bemto/bemto.pug
         +e.item
           +e.A.img(href="page.html")
             img(src="img/4.jpg" alt="4")
-          +e.A.subtitle(href="#") Financial Help
+          +e.A.subtitle(href="#" itemprop="offers") Financial Help
           +e.P.text We’ll advise you how to allocate your capital across stocks and bonds as well as how much to invest each month and year.
       .col-xs-12.col-md-6.col-xl-3
         +e.item
           +e.A.img(href="page.html")
             img(src="img/5.jpg" alt="5")
-          +e.A.subtitle(href="#") Retirement
+          +e.A.subtitle(href="#" itemprop="offers") Retirement
           +e.P.text Our investment approach for retirement is based on extensive research and backtested to provide a tailored experience.
       .col-xs-12.col-md-6.col-xl-3
         +e.item
           +e.A.img(href="page.html")
             img(src="img/6.jpg" alt="6")
-          +e.A.subtitle(href="#") Wealth Advice
+          +e.A.subtitle(href="#" itemprop="offers") Wealth Advice
           +e.P.textWe We can help you establish a robust financial foundation while providing the ongoing advice you need to preserve and enhance your wealth.
       .col-xs-12.col-md-6.col-xl-3
         +e.inner

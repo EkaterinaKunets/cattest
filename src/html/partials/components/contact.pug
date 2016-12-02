@@ -1,7 +1,7 @@
 include ../abstracts/bemto/bemto.pug
 
 //Contact Us
-+b.SECTION.contact
++b.SECTION.contact(itemscope itemtype="http://schema.org/Organization")
   .container
     .row
       .col-xs-12
@@ -11,34 +11,34 @@ include ../abstracts/bemto/bemto.pug
             span Send us a message and we’ll get back to you in one business day. You can also give us a ring at +44 345 67890.
       .col-xs-12.col-md-4
         +e.inner
-          +e.H2.subtitle NEW BUSINESS
+          +e.H2.subtitle(itemprop="department") NEW BUSINESS
           +e.P.text Looking for a financial partner? Want to know more about Fintech? Let’s chat.
-          +e.A.mail(href="mailto:example@mail.com") business@yoursite.com
+          +e.A.mail(href="mailto:example@mail.com" itemprop="email") business@yoursite.com
       .col-xs-12.col-md-4
         +e.inner
-          +e.H2.subtitle CAREERS
+          +e.H2.subtitle(itemprop="department") CAREERS
           +e.P.text We’re always looking for amazing talent in each of our offices. Introduce yourself.
-          +e.A.mail(href="mailto:example@mail.com") careers@yoursite.com
+          +e.A.mail(href="mailto:example@mail.com" itemprop="email") careers@yoursite.com
       .col-xs-12.col-md-4
         +e.inner
-          +e.H2.subtitle GENERAL
+          +e.H2.subtitle(itemprop="department") GENERAL
           +e.P.text Speaking engagements, media inquiries, and everything else. Drop us a line.
-          +e.A.mail(href="mailto:example@mail.com") hello@yoursite.com
+          +e.A.mail(href="mailto:example@mail.com" itemprop="email") hello@yoursite.com
       .col-xs-12.col-md-4
         +e.inner
-          +e.H2.subtitle NEW BUSINESS
+          +e.H2.subtitle(itemprop="department") NEW BUSINESS
           +e.P.text Looking for a financial partner? Want to know more about Fintech? Let’s chat.
-          +e.A.mail(href="mailto:example@mail.com") hello@yoursite.com
+          +e.A.mail(href="mailto:example@mail.com" itemprop="email") hello@yoursite.com
       .col-xs-12.col-md-4
         +e.inner
-          +e.H2.subtitle NEW BUSINESS
+          +e.H2.subtitle(itemprop="department") NEW BUSINESS
           +e.P.text Looking for a financial partner? Want to know more about Fintech? Let’s chat.
-          +e.A.mail(href="mailto:example@mail.com") hello@yoursite.com
+          +e.A.mail(href="mailto:example@mail.com" itemprop="email") hello@yoursite.com
       .col-xs-12.col-md-4
         +e.inner
-          +e.H2.subtitle NEW BUSINESS
+          +e.H2.subtitle(itemprop="department") NEW BUSINESS
           +e.P.text Looking for a financial partner? Want to know more about Fintech? Let’s chat.
-          +e.A.mail(href="mailto:example@mail.com") hello@yoursite.com
+          +e.A.mail(href="mailto:example@mail.com" itemprop="email") hello@yoursite.com
 +b.SECTION.map
   .container
     .row
